@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { routes } from "../router/routes";
+import { routes } from "@/router/routes";
 import { useRouter } from "vue-router";
 import { computed, ref } from "vue";
 import { useStore } from "vuex";
