@@ -104,10 +104,6 @@ const columns = [
     dataIndex: "id",
   },
   {
-    title: "内容",
-    dataIndex: "content",
-  },
-  {
     title: "标签",
     slotName: "tags",
   },
