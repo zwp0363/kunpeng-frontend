@@ -1,7 +1,3 @@
-/* generated using openapi-typescript-codegen -- do not edit */
-/* istanbul ignore file */
-/* tslint:disable */
-/* eslint-disable */
 import type { BaseResponse_long_ } from "../models/BaseResponse_long_";
 import type { BaseResponse_Page_QuestionSubmitVO_ } from "../models/BaseResponse_Page_QuestionSubmitVO_";
 import type { QuestionSubmitAddRequest } from "../models/QuestionSubmitAddRequest";
@@ -12,13 +8,14 @@ import { request as __request } from "../core/request";
 
 export class QuestionSubmitControllerService {
   /**
+   * @deprecated
    * doQuestionSubmit
    * @param questionSubmitAddRequest questionSubmitAddRequest
    * @returns BaseResponse_long_ OK
    * @returns any Created
    * @throws ApiError
    */
-  public static doQuestionSubmitUsingPost(
+  public static doQuestionSubmitUsingPost1(
     questionSubmitAddRequest: QuestionSubmitAddRequest
   ): CancelablePromise<BaseResponse_long_ | any> {
     return __request(OpenAPI, {
@@ -34,13 +31,14 @@ export class QuestionSubmitControllerService {
   }
 
   /**
+   * @deprecated
    * listQuestionSubmitByPage
    * @param questionSubmitQueryRequest questionSubmitQueryRequest
    * @returns BaseResponse_Page_QuestionSubmitVO_ OK
    * @returns any Created
    * @throws ApiError
    */
-  public static listQuestionSubmitByPageUsingPost(
+  public static listQuestionSubmitByPageUsingPost1(
     questionSubmitQueryRequest: QuestionSubmitQueryRequest
   ): CancelablePromise<BaseResponse_Page_QuestionSubmitVO_ | any> {
     return __request(OpenAPI, {
