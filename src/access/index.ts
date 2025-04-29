@@ -9,7 +9,7 @@ router.beforeEach(async (to, from, next) => {
   let loginUser = store.state.user.loginUser;
   // 如果之前没登陆过，自动登录
   if (!loginUser || !loginUser.userRole) {
-    // 加await是为了等用户登陆成功之后，再执行后续代码
+    // 加await是为了等获取当前用户登录信息之后，再执行后续代码
     await store.dispatch("user/getLoginUser");
     loginUser = store.state.user.loginUser;
   }
